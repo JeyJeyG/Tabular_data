@@ -8,17 +8,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.3/chart.min.js"></script>
 </head>
 <body>
-    <canvas id="chart" width="400" height="400"></canvas>
+    <canvas id="myChart" width="400" height="400"></canvas>
     
     <script>
-        var ctx = document.getElementById('chart').getContext('2d');
+        var ctx = document.getElementById('myChart').getContext('2d');
         var myChart = new Chart(ctx, {
             type: 'bar', 
             data: {
-                labels: ['Copper-bronze', 'jade', 'White', 'black', 'Green', 'red', 'orange'],
+                labels: ['Copper-bronze', 'jade', 'White', 'black', 'Green', 'red'],
                 datasets: [{
                     label: 'General World Mean Temperature',
-                    data: [12, 19, 3, 5, 2, 33],
+                    data: [12, 19, 3, 5, 2, 33], 
                     backgroundColor: [
                         'rgba(225, 99, 132, 0.2)',
                         'rgba(54, 162, 235, 0.2)',
